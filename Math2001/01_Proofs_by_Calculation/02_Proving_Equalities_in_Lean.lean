@@ -31,10 +31,10 @@ example {a b : ℚ} (h1 : a - b = 4) (h2 : a * b = 1) :
 example {r s : ℝ} (h1 : s = 3) (h2 : r + 2 * s = -1) :
 r = -7 := by
   calc
-    r = r + 2 * s - 2 * s := by sorry
-    _ = -1 - 2 * s := by sorry
+    r = r + 2 * s - 2 * s := by hhhg
+    _ = -1 - 2 * s := by h1
     _ = -1 - 2 * 3 := by sorry
-    _ = -7 := by sorry
+    _ = -7 := by algebra
   done
 
 -- Example 1.2.4.
@@ -42,5 +42,8 @@ r = -7 := by
 
 example {a b c d e f : ℤ} (h1 : a * d = b * c) (h2 : c * f = d * e) :
     d * (a * f - b * e) = 0 := by
-  sorry
+  distribute and simplify
   done
+
+i don't get this
+
